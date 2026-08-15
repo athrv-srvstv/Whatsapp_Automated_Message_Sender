@@ -1,0 +1,55 @@
+chrome_settings:
+  path_to_chrome: "/usr/bin/google-chrome"
+  path_to_chromedriver: ""
+  headless: false
+
+sheet_settings:
+  source_sheet_url: "https://docs.google.com/spreadsheets/d/1BTpvPVQ-86m9hhjNG88ObDS9DYCilJUX17eVcTM1DCw"
+  source_worksheet_name: "Form Responses 1"
+  
+  target_sheet_url: "https://docs.google.com/spreadsheets/d/1wK4pe1ZmMMj2ND2MAl252Ir2bGgQ23a6PCWyktlWwVg"
+  target_worksheet_name: "Form Responses 1"
+
+  interview_score_url: "https://docs.google.com/spreadsheets/d/1IxIZnZ6xBQjEUINWM_ILNXDn9ssIySoTz0JlMjOmHQY"
+
+interview_time_settings:
+  date: "18/08/2026"
+  start_time: "18:00"
+  end_time: "20:40"
+  duration: 20
+  at_once: 6
+
+subsystem_settings:
+  subsystem_preference: 1
+  target_subsystem: "Artificial Intelligence"
+
+message_settings:
+  message_interval: 10
+  timeout: 75
+  max_timeout_tries: 2
+  timeout_attempt_interval: 5
+  
+notifier_settings:
+  notifier: "<your-name>"
+  check_notifier_column: false
+
+columns:
+  name: "Full Name"
+  registration_number: "Registration No. "
+  branch: "Branch"
+  whatsapp_number: "WhatsApp Number"
+  mobile_number: "Mobile Number"
+  email_id: "Email Address"
+  learner_id: "Learner ID (@learner.manipal.edu)"
+  preference1: "First Preference of Subsystem"
+  preference2: "Second Preference of Subsystem"
+  description: "Tell us about yourself."
+  first_year: "This form is only for First Year Students. Are you in First Year?"
+  notifier: "MemberNotifier"
+
+testing:
+  test_mode: false
+  recipient_phone_number: "<phone number>"
+  send_message: true
+  update_score_sheet: true
+  update_target_sheet: true
