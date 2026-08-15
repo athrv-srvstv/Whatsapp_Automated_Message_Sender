@@ -1,0 +1,55 @@
+chrome_settings:
+  path_to_chrome: "../chrome-linux64/chrome"
+  path_to_chromedriver: "../chromedriver-linux64/chromedriver"
+  headless: false
+
+sheet_settings:
+  source_sheet_url: "https://docs.google.com/spreadsheets/d/18y1AOc-xN4ChmTi-7Aki5YoHoZEX0lbY-AkceMC985E"
+  source_worksheet_name: "Form Responses 1"
+  
+  target_sheet_url: "https://docs.google.com/spreadsheets/d/16cEyI66gi5si6MrYEsKqMrTnX5hJ2m8AEy1_1yYR40Q"
+  target_worksheet_name: "Form Responses 1"
+
+  interview_score_url: "https://docs.google.com/spreadsheets/d/1yWSKJLjUh5LwDMWezlp5M19feaXBRMIO87wFQZQ3FV8"
+
+interview_time_settings:
+  date: "28/08/2025"      # ONE evening per run. Change this and re-run each day.
+  start_time: "18:00"
+  end_time: "20:30"      # LAST CALL, not last finish. A 20:30 batch can run to 21:15.
+  duration: 20           # spacing between batches (NOT the interview length)
+  at_once: 9             # call 9, expect ~4-5 to show, 7 interviewers ready
+
+subsystem_settings:
+  subsystem_preference: 1
+  target_subsystem: "Artificial Intelligence"
+
+message_settings:
+  message_interval: 10
+  timeout: 30
+  max_timeout_tries: 3
+  timeout_attempt_interval: 5
+  
+notifier_settings:
+  notifier: "<your-name>"
+  check_notifier_column: false
+
+columns:
+  name: "Full Name"
+  registration_number: "Registration No. "
+  branch: "Branch"
+  whatsapp_number: "WhatsApp Number"
+  mobile_number: "Mobile Number"
+  email_id: "Email Address"
+  learner_id: "Learner ID (@learner.manipal.edu)"
+  preference1: "First Preference of Subsystem"
+  preference2: "Second Preference of Subsystem"
+  description: "Tell us about yourself."
+  first_year: "This form is only for First Year Students. Are you in First Year?"
+  notifier: "MemberNotifier"
+
+testing:
+  test_mode: true        # <-- LEAVE TRUE until you have messaged yourself
+  recipient_phone_number: "<phone number>"
+  send_message: true
+  update_score_sheet: true
+  update_target_sheet: true

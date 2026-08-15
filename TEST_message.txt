@@ -1,0 +1,3 @@
+Hi ${name}, ignore this - I'm testing a script for club interview messages, sorry for the spam!
+If it worked, this should say ${subsystem}, ${date} and ${interview_time}.
+Let me know you got it. Thanks!
